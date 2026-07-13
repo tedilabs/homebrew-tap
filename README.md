@@ -5,25 +5,25 @@
 ## Usage
 
 ```sh
-brew install tedilabs/tap/<formula>
+brew install --cask tedilabs/tap/<name>
 ```
 
 Or tap first, then install by name:
 
 ```sh
 brew tap tedilabs/tap
-brew install <formula>
+brew install --cask <name>
 ```
 
-## Available formulae
+## Available casks
 
-| Formula | Description |
-|---------|-------------|
+| Cask | Description |
+|------|-------------|
 | [`tfvault`](https://github.com/tedilabs/tfvault) | Universal Terraform credentials helper with pluggable secret backends |
 
 ## How it works
 
-Formulae under [`Formula/`](Formula/) are generated and committed
+Casks under [`Casks/`](Casks/) are generated and committed
 automatically by each project's release pipeline
 ([goreleaser](https://goreleaser.com)) whenever a new version is tagged.
 Please do not edit them by hand — changes will be overwritten on the
