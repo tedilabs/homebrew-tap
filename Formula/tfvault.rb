@@ -5,21 +5,21 @@
 class Tfvault < Formula
   desc "Universal Terraform credentials helper with pluggable secret backends"
   homepage "https://github.com/tedilabs/tfvault"
-  version "0.4.0"
+  version "0.5.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tedilabs/tfvault/releases/download/v0.4.0/tfvault_0.4.0_darwin_amd64.tar.gz"
-      sha256 "c0f053ac7611b4bfbf2c0fb5970e823b161613ecd18e6b11363bcb69a574e847"
+      url "https://github.com/tedilabs/tfvault/releases/download/v0.5.0/tfvault_0.5.0_darwin_amd64.tar.gz"
+      sha256 "61066de7e02e2178bfcf00fe0925607e35381e5d292047c2eaa6861bdd3ee86f"
 
       define_method(:install) do
         bin.install "tfvault"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tedilabs/tfvault/releases/download/v0.4.0/tfvault_0.4.0_darwin_arm64.tar.gz"
-      sha256 "6512de1d1b27507c997eaa05aac6e19e073d987c594de200e343ff1e2a249a70"
+      url "https://github.com/tedilabs/tfvault/releases/download/v0.5.0/tfvault_0.5.0_darwin_arm64.tar.gz"
+      sha256 "0e46ee2985c9c1a188abd198d4dc2e88ff17943825fa7cd8b72a57e55a9e27ab"
 
       define_method(:install) do
         bin.install "tfvault"
@@ -29,15 +29,15 @@ class Tfvault < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tedilabs/tfvault/releases/download/v0.4.0/tfvault_0.4.0_linux_amd64.tar.gz"
-      sha256 "64684138eb8789cc28c1e2c43cad2f3cdb4be59d3996b5c35bf9837e57c5ee71"
+      url "https://github.com/tedilabs/tfvault/releases/download/v0.5.0/tfvault_0.5.0_linux_amd64.tar.gz"
+      sha256 "1a9ffea6fd71d11662176879cdc6dd6bae04b19f301274a437d9c367f8f56978"
       define_method(:install) do
         bin.install "tfvault"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tedilabs/tfvault/releases/download/v0.4.0/tfvault_0.4.0_linux_arm64.tar.gz"
-      sha256 "9aecd65076db43cec3bb82a48ca694cf71f94345f10a5f51bfc4ead8f570f600"
+      url "https://github.com/tedilabs/tfvault/releases/download/v0.5.0/tfvault_0.5.0_linux_arm64.tar.gz"
+      sha256 "062357038c54c1028dda79833997a24d6e024e554fb4ca8072b051522a07f1e4"
       define_method(:install) do
         bin.install "tfvault"
       end
