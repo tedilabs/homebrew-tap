@@ -19,6 +19,7 @@ brew install <formula>
 
 | Formula | Description |
 |---------|-------------|
+| [`ota`](https://github.com/tedilabs/ota) | k9s-style terminal UI for Okta Workforce Identity (macOS and Linux) |
 | [`tfvault`](https://github.com/tedilabs/tfvault) | Universal Terraform credentials helper with pluggable secret backends (macOS and Linux) |
 
 ## How it works
